@@ -53,7 +53,7 @@ function markupCountriesHtml(countries) {
     htmlCard = countries
       .map(
         country =>
-          `<article class="card-item"><h2 class="card-title">${
+          `<h2 class="card-title">${
             country.name.official
           }</h2><p class="card-value"><span class="card-key">capital:</span> ${
             country.capital
@@ -63,7 +63,7 @@ function markupCountriesHtml(countries) {
             country.flags.svg
           }" alt="flag of country" width="200" height="100"</img><p class="card-value"><span class="card-key">languages:</span> ${Object.values(
             country.languages
-          )} </p></article>`
+          )} </p>`
       )
       .join('');
     countryCard.innerHTML = htmlCard;
