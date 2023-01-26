@@ -50,7 +50,7 @@ function markupCountriesHtml(countries) {
     countryCard.innerHTML = '';
     countriesList.innerHTML = htmlList;
   } else if (countries.length === 1) {
-    htmlCard = countries
+    let htmlCard = countries
       .map(
         country =>
           `<h2 class="card-title">${
